@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".EditAllActivity">
+
+    <TextView
+        android:id="@+id/tv_biodata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biodata Diri"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_biodata"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ed_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Nama Valid"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/ed_jk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:layout_margin="10dp"
+            />
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Email Valid"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ed_telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Nomor Telepon"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/ed_alamat"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Alamat"
+            android:inputType="text|textMultiLine"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_ly"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="Simpan"
+        android:backgroundTint="#123456"
+        app:cornerRadius="16dp" />
+
+</RelativeLayout>
